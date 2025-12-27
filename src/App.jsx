@@ -1,12 +1,36 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import './App.css'; 
 
 function App() {
   return (
-    <div>
-      <h1>Portfolio Setup Complete</h1>
-      <p>Ready to build!</p>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col xs={12} md={4} lg={3} className="bg-light sidebar p-0">
+          <Navigation />
+        </Col>
+
+        <Col xs={12} md={8} lg={9} className="px-0"> 
+          
+          <Container className="p-4 p-lg-5">
+      
+            <Hero />
+
+            <section id="projects" style={{minHeight: '100vh', paddingTop: '50px'}}>
+              <h2>Projects Coming Soon...</h2>
+            </section>
+            
+            <section id="contact" style={{minHeight: '50vh', paddingTop: '50px'}}>
+              <h2>Contact Coming Soon...</h2>
+            </section>
+
+          </Container>
+        </Col>
+      </Row>
+    </Container>
   );
-} 
+}
 
 export default App;

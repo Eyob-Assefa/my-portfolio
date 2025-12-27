@@ -1,1 +1,53 @@
- 
+ /* Import Google Fonts: 'Cormorant Garamond' for headers, 'Courier Prime' for text */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Courier+Prime&display=swap');
+
+:root {
+  /* Vintage Color Palette */
+  --paper-bg: #fdfbf7;      /* Warm off-white/parchment */
+  --ink-color: #1a1a1a;     /* Soft black */
+  --border-color: #1a1a1a;  /* Black borders */
+}
+
+body {
+  background-color: var(--paper-bg) !important;
+  color: var(--ink-color) !important;
+  font-family: 'Courier Prime', monospace; /* Typewriter feel for body text */
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Cormorant Garamond', serif; /* Classy serif for headings */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Override Bootstrap Defaults for the "Black & White" look */
+.bg-light {
+  background-color: var(--paper-bg) !important;
+}
+
+.btn-outline-dark {
+  border-radius: 0; /* Remove rounded corners for strict boxy look */
+  border-color: var(--ink-color);
+  color: var(--ink-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--ink-color);
+  color: var(--paper-bg);
+}
+
+/* Sidebar styling specific to this view */
+.sidebar {
+  background-color: var(--paper-bg);
+  border-right: 1px solid var(--border-color); /* A thin black line separating sidebar */
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    z-index: 1000;
+  }
+}
