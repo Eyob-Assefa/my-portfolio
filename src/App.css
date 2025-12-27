@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Navigation Link Styles */
+.nav-link-custom {
+  color: var(--ink-color) !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: fit-content;
+  display: block;
+  padding: 10px 50px !important; 
+  transition: all 0.3s ease; 
+  
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* The Hover Effect - change Colors */
+.nav-link-custom:hover {
+  background-color: var(--ink-color); 
+  color: var(--paper-bg) !important;  
+  padding-left: 60px !important;      
+  cursor: pointer;
+}
+
+
