@@ -1,21 +1,20 @@
- /* Import Google Fonts: 'Cormorant Garamond' for headers, 'Courier Prime' for text */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Courier+Prime&display=swap');
 
 :root {
   /* Vintage Color Palette */
-  --paper-bg: #fdfbf7;      /* Warm off-white/parchment */
-  --ink-color: #1a1a1a;     /* Soft black */
-  --border-color: #1a1a1a;  /* Black borders */
+  --paper-bg: #fdfbf7;      
+  --ink-color: #1a1a1a;     
+  --border-color: #1a1a1a;  
 }
 
 body {
   background-color: var(--paper-bg) !important;
   color: var(--ink-color) !important;
-  font-family: 'Courier Prime', monospace; /* Typewriter feel for body text */
+  font-family: 'Courier Prime', monospace; 
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
-  font-family: 'Cormorant Garamond', serif; /* Classy serif for headings */
+  font-family: 'Cormorant Garamond', serif; 
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -26,7 +25,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .btn-outline-dark {
-  border-radius: 0; /* Remove rounded corners for strict boxy look */
+  border-radius: 0; 
   border-color: var(--ink-color);
   color: var(--ink-color);
 }
@@ -39,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* Sidebar styling specific to this view */
 .sidebar {
   background-color: var(--paper-bg);
-  border-right: 1px solid var(--border-color); /* A thin black line separating sidebar */
+  border-right: 1px solid var(--border-color); 
 }
 
 @media (min-width: 768px) {

@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Navigation Link Styles */
+/* ----Custom Navigation Link Styles---- */
 .nav-link-custom {
   color: var(--ink-color) !important;
   font-weight: bold;
@@ -23,4 +23,69 @@ html {
   cursor: pointer;
 }
 
+/* --- PROJECTS SECTION STYLES --- */
 
+.section-title {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* 1. TINY CARD CONTAINER */
+.project-card {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  
+  /* STRICT DIMENSIONS */
+  /* We use min-height to ensure buttons fit, but keep it small */
+  height: 240px;      
+  max-width: 300px;   
+  
+  margin: 0 auto;     /* Centers it if there's extra space */
+  display: flex;      /* flexbox helps us push buttons to the bottom */
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+/* Lift effect on hover */
+.project-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 5px 5px 0px var(--ink-color);
+  background-color: white !important; /* Fill white to hide lines behind it */
+}
+
+/* 2. TYPOGRAPHY */
+.project-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  
+  /* Prevent title from taking too much space (1 line max) */
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-desc {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.4;
+  
+  /* Clamp to 3 lines so it fits in the small box */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 3. BADGES */
+.tech-badge {
+  font-size: 0.7rem; /* Tiny text */
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  color: #666 !important;
+  font-weight: normal;
+}

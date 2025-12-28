@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
 import './App.css'; 
 
 function App() {
@@ -18,9 +19,7 @@ function App() {
       
             <Hero />
 
-            <section id="projects" style={{minHeight: '100vh', paddingTop: '50px'}}>
-              <h2>Projects Coming Soon...</h2>
-            </section>
+            <Projects />
             
             <section id="contact" style={{minHeight: '50vh', paddingTop: '50px'}}>
               <h2>Contact Coming Soon...</h2>
