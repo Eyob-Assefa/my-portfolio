@@ -89,3 +89,39 @@ html {
   color: #666 !important;
   font-weight: normal;
 }
+
+/* --- CONTACT SECTION STYLES --- */
+
+/* --- CONTACT SECTION STYLES --- */
+
+/* The "Simple Box" Input Field */
+.form-simple {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important; /* Thin black border */
+  border-radius: 0 !important; /* Sharp corners */
+  padding: 10px !important;
+  
+  font-family: 'Courier Prime', monospace; /* Matches site font */
+  font-size: 0.9rem;
+  color: var(--ink-color) !important;
+  box-shadow: none !important; 
+}
+
+/* Slight darken on focus so user knows they are typing */
+.form-simple:focus {
+  border-color: #000 !important;
+  background-color: #fff !important;
+}
+
+.form-simple::placeholder {
+  color: #888;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.85rem;
+}
+
+.footer-text {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 30px; /* Reduced margin */
+}
