@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 function Contact() {
@@ -10,10 +9,6 @@ function Contact() {
           Get in Touch.
         </h2>
 
-        {/* 1. TEXT FIX: 
-            Removed the strict 'Col' width restriction. 
-            Added 'maxWidth' to keep it readable but wide enough to not wrap awkwardly.
-        */}
         <div style={{maxWidth: '800px', marginBottom: '30px'}}>
             <p className="fs-6" style={{fontFamily: 'Courier Prime, monospace', lineHeight: '1.6'}}>
               I am currently open to new opportunities. Whether you have a question or just want to say hi, 
@@ -21,11 +16,9 @@ function Contact() {
             </p>
         </div>
 
-        {/* 2. COMPACT FORM CONTAINER */}
         <div style={{maxWidth: '700px'}}>
             <Form action="https://formspree.io/f/maqypqav" method="POST">
               
-              {/* 3. SIDE BY SIDE INPUTS */}
               <Row className="g-3 mb-3">
                 <Col md={6}>
                     <Form.Control 
@@ -47,19 +40,17 @@ function Contact() {
                 </Col>
               </Row>
 
-              {/* 4. SIMPLE MESSAGE BOX */}
               <Form.Group className="mb-3" controlId="formMessage">
                 <Form.Control 
                     as="textarea" 
                     name="message"
-                    rows={4} // Enough height for a short message
+                    rows={4} 
                     placeholder="Write your message here..." 
                     className="form-simple" 
                     required 
                 />
               </Form.Group>
 
-              {/* 5. BUTTON */}
               <Button 
                 variant="dark" 
                 type="submit" 
@@ -71,9 +62,8 @@ function Contact() {
             </Form>
         </div>
 
-        {/* Footer */}
         <div className="footer-text">
-            <p>&copy; {new Date().getFullYear()} [Your Name]. Built with React & Bootstrap.</p>
+            <p>&copy; {new Date().getFullYear()} Eyob-Assefa. Built with React & Bootstrap.</p>
         </div>
 
       </Container>

@@ -62,7 +62,6 @@ html {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   
-  /* Prevent title from taking too much space (1 line max) */
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -74,7 +73,6 @@ html {
   color: #555;
   line-height: 1.4;
   
-  /* Clamp to 3 lines so it fits in the small box */
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -92,9 +90,6 @@ html {
 
 /* --- CONTACT SECTION STYLES --- */
 
-/* --- CONTACT SECTION STYLES --- */
-
-/* The "Simple Box" Input Field */
 .form-simple {
   background-color: transparent !important;
   border: 1px solid var(--border-color) !important; /* Thin black border */

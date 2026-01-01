@@ -6,18 +6,15 @@ function Navigation() {
   return (
     <Navbar expand="md" className="flex-md-column h-100 p-4 align-items-center">
       <Container fluid className="flex-md-column p-0 h-100 text-center">
-        
-        {/* --- TOP SECTION: Image & Greeting (Vertical Stack) --- */}
+        {/* --- Top section --- */}
         <div className="d-flex flex-column align-items-center mb-md-5 w-100">
-            {/* 1. Larger Image */}
             <img 
               src="https://placehold.co/100" 
               alt="Profile"
-              className="rounded-circle border border-dark mb-3" // mb-3 adds space below image
+              className="rounded-circle border border-dark mb-3" 
               style={{width: '100px', height: '100px', objectFit: 'cover'}}
             />
             
-            {/* 2. Greeting Below Image */}
             <div>
               <span className="d-block fw-bold font-serif fs-4">Hi, I'm [Name]</span>
               <small className="text-muted fst-italic">
@@ -26,7 +23,7 @@ function Navigation() {
             </div>
         </div>
 
-        {/* --- MIDDLE SECTION: Menu Links --- */}
+        {/* --- Middle section - Menu Links --- */}
         <Navbar.Toggle aria-controls="sidebar-nav" className="mb-3 border-dark rounded-0" />
         
         <Navbar.Collapse id="sidebar-nav" className="w-100">
@@ -45,7 +42,7 @@ function Navigation() {
           </Nav>
         </Navbar.Collapse>
 
-        {/* --- BOTTOM SECTION: Social Icons --- */}
+        {/* --- Bottom section - Social Icons --- */}
         <div className="mt-auto d-none d-md-flex gap-4 justify-content-center w-100 pt-4">
            <a href="https://github.com"
               target="_blank"
