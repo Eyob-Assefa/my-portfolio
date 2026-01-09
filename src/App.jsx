@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
+import Hero from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './App.css'; 
