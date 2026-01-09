@@ -18,8 +18,7 @@ html {
 /* The Hover Effect - change Colors */
 .nav-link-custom:hover {
   background-color: var(--ink-color); 
-  color: var(--paper-bg) !important;  
-  padding-left: 60px !important;      
+  color: var(--paper-bg) !important;   
   cursor: pointer;
 }
 
@@ -31,14 +30,13 @@ html {
   display: inline-block;
 }
 
-/* 1. TINY CARD CONTAINER */
+/* 1. CARD CONTAINER */
 .project-card {
   border: 1px solid var(--border-color) !important;
   border-radius: 0 !important;
   background-color: transparent !important;
   
-  /* STRICT DIMENSIONS */
-  /* We use min-height to ensure buttons fit, but keep it small */
+  /* DIMENSIONS */
   height: 240px;      
   max-width: 300px;   
   
@@ -48,11 +46,10 @@ html {
   transition: all 0.2s ease;
 }
 
-/* Lift effect on hover */
+
 .project-card:hover {
-  transform: translateY(-5px); 
   box-shadow: 5px 5px 0px var(--ink-color);
-  background-color: white !important; /* Fill white to hide lines behind it */
+  background-color: white !important; 
 }
 
 /* 2. TYPOGRAPHY */
@@ -118,5 +115,5 @@ html {
   font-family: 'Courier Prime', monospace;
   font-size: 0.75rem;
   color: #777;
-  margin-top: 30px; /* Reduced margin */
+  margin-top: 30px; 
 }
