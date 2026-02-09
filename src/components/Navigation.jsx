@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import profilePic from '../assets/me.jpg';
 
 function Navigation() {
   return (
@@ -9,7 +10,7 @@ function Navigation() {
 
         <div className="d-flex flex-column align-items-center mb-md-5 w-100">
             <img 
-              src="./profile_pic.jpg" 
+              src={profilePic} 
               alt="Profile"
               className="rounded-circle border border-dark mb-3" 
               style={{width: '130px', height: '135px', objectFit: 'cover', objectPosition: 'center 20%'}}
