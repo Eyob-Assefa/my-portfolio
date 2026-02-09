@@ -16,7 +16,7 @@ function App() {
 
         <Col xs={12} md={8} lg={9} className="px-0"> 
           
-          <Container className="p-4 p-lg-5">
+          <Container className="px-4 px-lg-5 pb-4 pt-0">
       
             <Hero />
 
