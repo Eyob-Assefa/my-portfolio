@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ----Custom Navigation Link Styles---- */
 .nav-link-custom {
   color: var(--ink-color) !important;
   font-weight: bold;
@@ -15,14 +14,12 @@ html {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* The Hover Effect - change Colors */
 .nav-link-custom:hover {
   background-color: var(--ink-color); 
   color: var(--paper-bg) !important;   
   cursor: pointer;
 }
 
-/* --- PROJECTS SECTION STYLES --- */
 
 .section-title {
   border-bottom: 2px solid var(--border-color);
@@ -30,18 +27,14 @@ html {
   display: inline-block;
 }
 
-/* 1. CARD CONTAINER */
 .project-card {
   border: 1px solid var(--border-color) !important;
   border-radius: 0 !important;
-  background-color: transparent !important;
-  
-  /* DIMENSIONS */
+  background-color: transparent !important; 
   height: 240px;      
   max-width: 300px;   
-  
-  margin: 0 auto;     /* Centers it if there's extra space */
-  display: flex;      /* flexbox helps us push buttons to the bottom */
+  margin: 0 auto;     
+  display: flex;     
   flex-direction: column;
   transition: all 0.2s ease;
 }
@@ -52,13 +45,11 @@ html {
   background-color: white !important; 
 }
 
-/* 2. TYPOGRAPHY */
 .project-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -76,30 +67,26 @@ html {
   overflow: hidden;
 }
 
-/* 3. BADGES */
 .tech-badge {
-  font-size: 0.7rem; /* Tiny text */
+  font-size: 0.7rem; 
   padding: 4px 6px;
   border: 1px solid #ccc;
   color: #666 !important;
   font-weight: normal;
 }
 
-/* --- CONTACT SECTION STYLES --- */
 
 .form-simple {
   background-color: transparent !important;
-  border: 1px solid var(--border-color) !important; /* Thin black border */
-  border-radius: 0 !important; /* Sharp corners */
+  border: 1px solid var(--border-color) !important; 
+  border-radius: 0 !important; 
   padding: 10px !important;
-  
-  font-family: 'Courier Prime', monospace; /* Matches site font */
+  font-family: 'Courier Prime', monospace; 
   font-size: 0.9rem;
   color: var(--ink-color) !important;
   box-shadow: none !important; 
 }
 
-/* Slight darken on focus so user knows they are typing */
 .form-simple:focus {
   border-color: #000 !important;
   background-color: #fff !important;
