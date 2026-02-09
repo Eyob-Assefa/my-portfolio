@@ -17,18 +17,20 @@ function Hero() {
   ];
 
   return (
-    <section id="about" className="py-5">
+    <section id="about" className="pt-0 py-5">
       <Container className="px-0">
         
         <h2 className="display-4 mb-4" style={{borderBottom: '2px solid black', paddingBottom: '10px', display:'inline-block'}}>
           About Me.
         </h2>
 
-        <div className="mb-5" style={{maxWidth: '700px'}}>
+        <div className="mb-5">
             <p className="fs-5 lh-lg">
-                I am a Data Scientist with a focus on Machine learning and AI. 
-                I have a strong background programming experience in C, and Python. I enjoy developing websites,
-                and have expereince with front-end web developemnt using React, and Bootstrap. 
+            I am a Data Science student specializing in machine learning and AI, with a solid coding background 
+            in C and Python. I also enjoy building websites to showcase my work and communicate ideas in an engaging, simple way. 
+            In recent years, I have held two research assistant roles. One involved working as a 
+            health informatics data analyst, managing both large and small datasets. The other role included contributing 
+            to the development and launch of a library chatbot and enhancing the user experience.
             </p>
         </div>
 

@@ -6,24 +6,23 @@ function Navigation() {
   return (
     <Navbar expand="md" className="flex-md-column h-100 p-4 align-items-center">
       <Container fluid className="flex-md-column p-0 h-100 text-center">
-        {/* --- Top section --- */}
+
         <div className="d-flex flex-column align-items-center mb-md-5 w-100">
             <img 
-              src="https://placehold.co/100" 
+              src="/profile_pic.jpg" 
               alt="Profile"
               className="rounded-circle border border-dark mb-3" 
-              style={{width: '100px', height: '100px', objectFit: 'cover'}}
+              style={{width: '130px', height: '135px', objectFit: 'cover', objectPosition: 'center 20%'}}
             />
             
             <div>
-              <span className="d-block fw-bold font-serif fs-4">Hi, I'm [Name]</span>
+              <span className="d-block fw-bold font-serif fs-4">Hi, I'm Eyob👋🏽</span>
               <small className="text-muted fst-italic">
-                Building digital things.
+                Currently student at Zayed University & 42 AbuDhabi
               </small>
             </div>
         </div>
 
-        {/* --- Middle section - Menu Links --- */}
         <Navbar.Toggle aria-controls="sidebar-nav" className="mb-3 border-dark rounded-0" />
         
         <Navbar.Collapse id="sidebar-nav" className="w-100">
@@ -42,23 +41,22 @@ function Navigation() {
           </Nav>
         </Navbar.Collapse>
 
-        {/* --- Bottom section - Social Icons --- */}
         <div className="mt-auto d-none d-md-flex gap-4 justify-content-center w-100 pt-4">
-           <a href="https://github.com"
+           <a href="https://github.com/Eyob-Assefa"
               target="_blank"
               rel="noopener noreferrer" 
               className="text-dark link-offset-2 link-underline-opacity-0 hover-opacity"
             >
                 <FaGithub size={22} />
             </a>
-           <a href="https://linkedin.com" 
+           <a href="https://www.linkedin.com/in/eyob-assefa/" 
               targe="_blank"
               rel="noopener noreferrer"
               className="text-dark link-offset-2 link-underline-opacity-0 hover-opacity"
            >
               <FaLinkedin size={22} />
             </a>
-           <a href="mailto:email@example.com" 
+           <a href="mailto:assefaeyob21@gmail.com" 
               className="text-dark link-offset-2 link-underline-opacity-0 hover-opacity"
            >
               <FaEnvelope size={22} />

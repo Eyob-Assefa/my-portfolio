@@ -3,35 +3,20 @@ import { Container, Row, Col, Card, Button, Badge } from 'react-bootstrap';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
+  
   const projectList = [
     {
       id: 1,
-      title: "E-Commerce Dashboard",
-      description: "A responsive admin dashboard for tracking sales and inventory with real-time charts.",
-      technologies: ["React", "Bootstrap", "Chart.js"],
-      demoLink: "#",
-      repoLink: "#"
-    },
-    {
-      id: 2,
-      title: "Task Manager App",
-      description: "A minimalist To-Do application with drag-and-drop functionality and local storage.",
-      technologies: ["JavaScript", "HTML5", "CSS3"],
-      demoLink: "#",
-      repoLink: "#"
-    },
-    {
-      id: 3,
-      title: "Weather Widget",
-      description: "Fetches live weather data using OpenWeatherMap API based on user location.",
-      technologies: ["React", "API Integration"],
-      demoLink: "#",
-      repoLink: "#"
+      title: "Space42",
+      description: "An interactive candidate portal with a RAG chatbot for company related questions and automated hiring tools.",
+      technologies: ["Next.js", "FastAPI", "RAG", "Supabase", "OpenAI", "Tailwind CSS"],
+      demoLink: "https://space42.vercel.app/",
+      repoLink: "https://github.com/Eyob-Assefa/space42"
     }
   ];
 
   return (
-    <section id="projects" className="py-5">
+    <section id="projects" className="pt-0 py-5">
       <Container className="px-0">
         
         <h2 className="display-4 mb-5 section-title">
@@ -64,6 +49,18 @@ function Projects() {
                     <Button 
                         variant="outline-dark" 
                         size="sm" 
+                        href={project.repoLink} 
+                        target="_blank"
+                        className="rounded-0 d-flex align-items-center justify-content-center gap-2"
+                        style={{fontSize: '0.75rem', width: '48%'}}
+                    >
+                        <FaGithub /> Code
+                    </Button>
+
+                  { project.demoLink && (
+                        <Button 
+                        variant="outline-dark" 
+                        size="sm" 
                         href={project.demoLink} 
                         target="_blank"
                         className="rounded-0 flex-grow-1 d-flex align-items-center justify-content-center gap-2"
@@ -71,16 +68,7 @@ function Projects() {
                     >
                         <FaExternalLinkAlt /> Demo
                     </Button>
-                    <Button 
-                        variant="outline-dark" 
-                        size="sm" 
-                        href={project.repoLink} 
-                        target="_blank"
-                        className="rounded-0 flex-grow-1 d-flex align-items-center justify-content-center gap-2"
-                        style={{fontSize: '0.75rem'}}
-                    >
-                        <FaGithub /> Code
-                    </Button>
+                  )}
                 </div>
 
               </Card>
