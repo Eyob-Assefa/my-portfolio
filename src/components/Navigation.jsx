@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import profilePic from '../assets/me.jpg';
+import profilePic from '../assets/profile_pic.jpg';
 
 function Navigation() {
   return (
